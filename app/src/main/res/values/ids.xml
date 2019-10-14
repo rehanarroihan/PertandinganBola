@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--navigation bottom-->
+    <item name="match" type="id" />
+    <item name="club" type="id" />
+    <item name="favorites" type="id" />
+
+    <!--fragment match-->
+    <item name="spinnerMatch" type="id" />
+    <item name="btPrevious" type="id" />
+    <item name="btNext" type="id" />
+    <item name="recyclerViewMatch" type="id" />
+
+    <!--club list item-->
+    <item name="team_badge" type="id" />
+    <item name="team_name" type="id" />
+
+    <!--player list item-->
+    <item name="team_badge_player" type="id" />
+    <item name="team_name_player" type="id" />
+    <item name="team_position_player" type="id" />
+
+    <!--recyclerview-->
+    <item name="recyclerViewPrev" type="id" />
+
+    <!--detail activity navbar menu-->
+    <item name="action_fav" type="id" />
+    <item name="action_unfav" type="id" />
+
+</resources>

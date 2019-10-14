@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeFavorite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".favorite.FavoriteFragment">
+    
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pertandingan"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvFavoriteMatchNull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="@string/no_fav"
+                android:textAlignment="center"
+                android:textColor="#90A4AE" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewFavMatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--Club-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Club"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvFavoriteClubNull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:text="@string/no_fav"
+                android:textAlignment="center"
+                android:textColor="#90A4AE" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewFavClub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
